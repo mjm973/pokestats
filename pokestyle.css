@@ -1,0 +1,239 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    min-height: 80%;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-image: url('http://wallpapercave.com/wp/UTEF6XR.png');
+}
+
+select {
+    width: 120px;
+    height: 35px;
+    font-size: 18px;
+    border-width: 2px;
+    font-family: inherit;
+    border-color: #000000;
+    padding-left: 5px;
+}
+
+.tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.55);
+}
+
+    .tint.extra {
+        background: rgba(255, 255, 255, 0.85);
+    }
+
+.maintitle {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 3px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 3px;
+}
+
+.text {
+    text-align: left;
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+}
+
+#graph-area {
+    float: left;
+    width: 60%;
+    height: 80%;
+    min-height: 400px;
+    /*margin: auto;*/
+    display: table;
+}
+
+#linky {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+#intro {
+    display: table-cell;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    font-size: 42px;
+    vertical-align: middle;
+}
+
+.xcheck {
+    display: block;
+    clear: both;
+    margin: auto;
+    text-align: center;
+}
+
+.ycheck {
+    width: 20%;
+    float: left;
+    height: 60%;
+    min-height: 400px;
+    text-align: right;
+    display: table;
+}
+
+    .ycheck div {
+        top: 50%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+.label p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.label span {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.10) 100%);
+    /*background-image: radial-gradient(rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.10) 100%);*/
+}
+
+.typecheck {
+    width: 20%;
+    float: left;
+    height: 60%;
+    min-height: 400px;
+    text-align: left;
+    display: table;
+}
+
+    .typecheck div {
+        top: 50%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+svg .axis path {
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+svg .axis line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+}
+
+svg .axis-label {
+    text-anchor: middle;
+    font-size: 36px;
+    fill: black;
+}
+
+svg .axis text {
+    font-size: 12px;
+}
+
+svg .datapoint {
+}
+
+    svg .datapoint:hover {
+        stroke: black;
+        stroke-width: 2px;
+        opacity: 0.6;
+    }
+
+svg .selection {
+    text-anchor: middle;
+    stroke: black;
+    /*fill: white;*/
+    background: rgba(255, 255, 255, 0.2);
+}
+
+svg .normal {
+    fill: #c9b79b;
+}
+
+svg .grass {
+    fill: #53e402;
+}
+
+svg .fire {
+    fill: #fa4900;
+}
+
+svg .water {
+    fill: #0055d4;
+}
+
+svg .ground {
+    fill: #b2a362;
+}
+
+svg .rock {
+    fill: #887431;
+}
+
+svg .fighting {
+    fill: #ab1414;
+}
+
+svg .bug {
+    fill: #6da023;
+}
+
+svg .poison {
+    fill: #6c1cb3;
+}
+
+svg .ghost {
+    fill: #553f75;
+}
+
+svg .psychic {
+    fill: #eb5af3;
+}
+
+svg .flying {
+    fill: #3aa1d2;
+}
+
+svg .electric {
+    fill: #ffff00;
+}
+
+svg .ice {
+    fill: #00fffa;
+}
+
+svg .dragon {
+    fill: #9800b8;
+}
+
+svg .steel {
+    fill: #83898e;
+}
+
+svg .dark {
+    fill: #3c3c3c;
+}
+
+svg .fairy {
+    fill: #ff8ffd;
+}

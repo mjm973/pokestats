@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>PokéStats - Graphs for Pokémon Nerds</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Titillium+Web">
+    <link href="pokestyle.css" rel="stylesheet" />
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="http://mjm973.nyuad.im/lib/p5.js"></script>
+    <script src="http://mjm973.nyuad.im/lib/p5.dom.js"></script>
+</head>
+<body>
+    <div class="tint"></div>
+        <header>
+            <h1 class="maintitle">PokéStats</h1>
+            <h2 class="subtitle">Graphs for Pokémon Nerds</h2>
+            <a id="linky" href="about.html">About this page</a>
+        </header>
+        <div class="ycheck label">
+            <div>
+                <p><span>Y Axis:</span></p>
+                <select class="axis-val" id="ystat">
+                    <option>HP</option>
+                    <option selected="selected">Attack</option>
+                    <option>Defense</option>
+                    <option>Special Attack</option>
+                    <option>Special Defense</option>
+                    <option>Speed</option>
+                </select>
+            </div>
+        </div>
+        <div id="graph-area">
+            <div id="intro">
+                Begin by selecting a Pokémon type! -->
+            </div>
+        </div>
+        <div class="typecheck label">
+            <div>
+                <p><span>Pokémon Type:</span></p>
+                <select class="typeparam" id="poketype">
+                    <option selected="selected">Choose...</option>
+                    <option>Normal</option>
+                    <option>Fighting</option>
+                    <option>Flying</option>
+                    <option>Poison</option>
+                    <option>Ground</option>
+                    <option>Rock</option>
+                    <option>Bug</option>
+                    <option>Ghost</option>
+                    <option>Steel</option>
+                    <option>Fire</option>
+                    <option>Water</option>
+                    <option>Grass</option>
+                    <option>Electric</option>
+                    <option>Psychic</option>
+                    <option>Ice</option>
+                    <option>Dragon</option>
+                    <option>Dark</option>
+                    <option>Fairy</option>
+                </select>
+            </div>
+        </div>
+        <div class="xcheck label">
+            <div>
+                <p><span>X Axis:</span></p>
+                <select class="axis-val" id="xstat">
+                    <option>HP</option>
+                    <option>Attack</option>
+                    <option>Defense</option>
+                    <option>Special Attack</option>
+                    <option>Special Defense</option>
+                    <option>Speed</option>
+                </select>
+            </div>
+        </div>
+    <!--</div>-->
+    <script src="pokescript.js"></script>
+</body>
+</html>

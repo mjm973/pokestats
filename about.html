@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>About PokéStats</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Titillium+Web">
+    <link href="pokestyle.css" rel="stylesheet" />
+    <!--<script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="http://mjm973.nyuad.im/lib/p5.js"></script>
+    <script src="http://mjm973.nyuad.im/lib/p5.dom.js"></script>-->
+</head>
+<body>
+    <div class="tint extra"></div>
+    <header>
+        <h1 class="maintitle">About PokéStats</h1>
+        <h2 class="subtitle">My Second Mashups Project</h2>
+        <a id="linky" href="index.html">Back to PokéStats</a>
+    </header>
+
+    <div class="text">
+        <p>
+            As stated right above, this is my second projects for my Mashups class. The prompt was to create a website that used data from
+            at least one web API and used at least one interaction library. In my case, I chose to work with PokéAPI, an API for all things
+            Pokémon (seriously, any random piece of data from any main series Pokémon game can be found there). I requested Pokémon stats (the
+            numbers that the game crunches in the background when you are having a Pokémon battle) and displayed them in a nice graph using
+            the D3 JavaScript library. Additionally, I implemented a loading screen built using p5.js.
+        </p>
+        <p>
+            The site prompts the user to pick a Pokémon type to be displayed in the graph. Then, the graph updates and visualizes the stats
+            of all the Pokémon of the selected type. You pick a stat for the X axix, another for the Y axis and voilà! Then, the datapoint's
+            size represent's the Pokémon's actual size (though the API's database had some faulty numbers...). You can even hover a datapoint
+            and get the Pokémon's name and stats! Getting the data was fairly simple stuff...
+        </p>
+        <p>
+            ...or rather, it would have been simple if the API operated differently. The thing is, when I sent a request to the API with the selected
+            Pokémon type, the API responds with a list of all the Pokémon of that type and their corresponding endpoints. However, the actual data
+            for each creature is found only in their specific endpoint, so I had to then request the data for every single Pokémon in the list
+            I got. And, mind you, usually those lists had around 100 Pokémon each. So lots of requests.
+        </p>
+        <p>
+            But that meant I had to wait for all the data to come back before proceeding any further. I looked up online some code to alter jQuery
+            such that I could implement the WHEN-THEN method with an array of promises (as the size of each Pokémon type list is variable) instead.
+            Once that was up and running, I built a sketch in p5.js to draw a simple loading screen (because those 100 requests take a good amount
+            of time).
+        </p>
+        <p>
+            And there you have it! Almost. The API recommends caching data (because clearly making hundreds of requests over and over again is not
+            the brightest idea), but as all my code is client-side, this was not really possible. So I think the API gpt mad at me every now and then,
+            because after testing/using the site for a while I started getting plenty of errors with my requests. But I swear it works great as long as
+            you actually get the data back (which should be always except when you get CORS errors or the API is tired of so many requests).
+        </p>
+    </div>
+
+</body>
+</html>
